@@ -1,0 +1,98 @@
+/*font-family: 'Inter', sans-serif;
+font-family: 'Shadows Into Light', cursive;*/
+html {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(65, 110, 245);
+    font-family:'Inter', sans-serif;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*height: 100vh;*/
+}
+.wrapper {
+    max-width: 940px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: .5rem;
+    box-shadow: 5px 8px 10px #0000004a;
+}
+.wrapper h2 {
+    color: rgb(7, 7, 74);
+    font-size: 22px;
+    font-weight: 600;
+}
+@media screen and (max-width: 480px) {
+    .wrapper {
+        min-width: 376px;
+        margin: 0 20px;
+        box-shadow: none;
+    }
+}
+#N-t {
+    display: inline-flex;
+    background-color: rgb(65, 110, 245);
+    padding: 0 60px;
+    margin: 20px 0;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+} 
+#N-t  {
+    align-items: center;
+    font-family: 'Shadows Into Light', cursive;;
+}
+#N-t:hover { 
+    background-color: rgb(0, 55, 222);
+}
+
+#N-t a {text-decoration: none; color: #fff;}
+#N-t .material-symbols-outlined{
+    margin-left: 20px;
+}
+#p-d p,
+#i-d p {
+    color: rgb(11, 11, 104);
+    font-weight: 400;
+}
+form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+@media screen and (max-width: 480px) {
+    form {
+        grid-template-columns: repeat(1, 2fr);
+    }
+}
+form:focus {
+    outline: none;
+    border: 2px solid rgb(11, 11, 104);
+}
+label {
+    font-weight: 800;
+}
+@media screen and (max-width: 480px) {
+    label {
+        font-weight: bold;
+    }
+}
+input {
+    display: block;
+    font-weight: 400;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    border: 2px solid rgba(171, 192, 255, 0.573);
+}
+@media screen and (max-width: 480px) {
+    input {
+        margin-top: 3px;
+    }
+}
